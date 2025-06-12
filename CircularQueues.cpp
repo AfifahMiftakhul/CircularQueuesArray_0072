@@ -11,7 +11,7 @@ class Queues
     public :
     Queues()
     {
-        FRONT = -1;
+        FRONT = -1;    // front & rear masih diluar krn blm memasukkan data
         REAR = -1;
     }
 
@@ -19,6 +19,15 @@ class Queues
     {
         int num;
         cout << "Enter a number : ";
+        cin >> num;
+        cout << endl;
 
+        // 1. cek apakah antrian penuh
+        if ((FRONT == 0 && REAR == max -1) || (FRONT == REAR + 1))
+        {
+            cout << "\nQueue overlow\n";
+            return;
+        }
+        
     }
 }
