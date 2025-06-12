@@ -82,6 +82,15 @@ class Queues
         }
         cout << "\nElements is the queueu are ...\n";
 
-        //
+        //jika front position <= rear position, iterasi dr front hingga rear
+        if (FRONT_position <= REAR_position)
+        {
+            while (FRONT_position <= REAR_position)
+            {
+                cout << queue_array[FRONT_position] << " ";
+                FRONT_position++;
+            }
+            
+        }
     }
 }
