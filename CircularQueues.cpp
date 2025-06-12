@@ -168,4 +168,5 @@ int main()
                 cout << "check for the vlaues entered. " << endl;
             }
         }
+        return 0;
     }
