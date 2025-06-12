@@ -69,5 +69,19 @@ class Queues
                 FRONT = FRONT + 1;
         }
     }
-    
+    void display()
+    {
+        int FRONT_position = FRONT;
+        int REAR_position = REAR;
+
+        // cek apakah antrean kosong
+        if (FRONT == -1)
+        {
+            cout << "Queueu is empty \n";
+            return;
+        }
+        cout << "\nElements is the queueu are ...\n";
+
+        //
+    }
 }
