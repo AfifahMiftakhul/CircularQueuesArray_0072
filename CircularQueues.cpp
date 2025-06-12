@@ -62,7 +62,12 @@ class Queues
         }
         else
         {
-            //
+            //jika element yg dihapus berada di akhir, maka array kembali ke awal
+            if (FRONT == max -1)
+                FRONT = 0;
+            else
+                FRONT = FRONT + 1;
         }
     }
+    
 }
